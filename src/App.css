@@ -52,6 +52,12 @@ hr{
   color: gray;
 }
 
+.sub-text{
+  font-size: 10px;
+  font-weight: lighter;
+  color: gray;
+}
+
 .check-btn{
   color: #30e661;
  
@@ -60,7 +66,20 @@ hr{
 .activity-divs{
   margin: 8% 0% 8% 0%;
 }
+.meter{
+  width: 100%;
+  color: #2826ab;
+  border: 2px solid black;
+  
+}
 
+meter::-webkit-meter-optimum-value {
+  background: blue
+}
+
+#main-metrics-div{
+  padding: 3%;
+}
 
 
 #my-title{
@@ -86,4 +105,8 @@ hr{
 
 #past-activity-div{
   padding: 5%;
+}
+
+#graph1{
+  padding: 3%;
 }
