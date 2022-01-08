@@ -23,7 +23,7 @@ export default class Header extends Component {
                         </div>
                         <div className='col-xs-12 col-md-6' id='username-div'>
 
-                            <img src="https://thispersondoesnotexist.com/image" className='circular-image'></img>
+                            <img src="https://thispersondoesnotexist.com/image" alt="person" className='circular-image'></img>
                             <span>username</span>
 
                         </div>

@@ -2,6 +2,15 @@
 
 
 /* My css*/
+
+hr{
+  width: 40px;
+  border-top: 5px solid #2826ab;
+
+}
+
+
+
 .circular-image{
   border-radius: 50%;
   width: 40px;
@@ -22,6 +31,38 @@
 .left-shadow{
 
 }
+
+
+.left-border{
+ 
+  box-shadow:  -3px 0 8px -4px #ccc;
+}
+
+.sub-heading{
+  font-size: 16px;
+}
+
+.past-activity-divs{
+
+}
+
+.dates{
+  font-size: 10px;
+  font-weight: lighter;
+  color: gray;
+}
+
+.check-btn{
+  color: #30e661;
+ 
+}
+
+.activity-divs{
+  margin: 8% 0% 8% 0%;
+}
+
+
+
 #my-title{
   text-align: left;
   font-weight: 700 ;
@@ -39,9 +80,10 @@
   
 }
 
-.left-border{
- 
-  box-shadow:  -3px 0 8px -4px #ccc;
+#past-activity-content-div{
+  margin: 10% 0% 30% 0%;
 }
 
-
+#past-activity-div{
+  padding: 5%;
+}
