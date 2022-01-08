@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+
+
+
+/* My css*/
+.circular-image{
+  border-radius: 50%;
+  width: 40px;
+  margin: 2%;
+  box-shadow: 5px 5px 5px #ccc;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  margin-top: 1.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.myDiv{
+  background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+.left-shadow{
+
+}
+#my-title{
+  text-align: left;
+  font-weight: 700 ;
 }
 
-.App-link {
-  color: #61dafb;
+#transparency-text{
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: lighter;
+  font-size: 70%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#username-div{
+  text-align: right;
+  
 }
+
+.left-border{
+ 
+  box-shadow:  -3px 0 8px -4px #ccc;
+}
+
+
