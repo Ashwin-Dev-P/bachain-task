@@ -38,7 +38,7 @@ export default class PastActivity extends Component {
 
 
     render() {
-        console.log(this.state.activity)
+
         return (
             <div id='past-activity-div'>
                 <h3 className='sub-heading'>Past Activity</h3>

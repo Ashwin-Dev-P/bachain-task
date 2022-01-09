@@ -1,4 +1,7 @@
-
+:root {
+  --myblue:linear-gradient(to bottom, #0000ff 0%, #3399ff 100%)
+ 
+}
 
 
 /* My css*/
@@ -109,6 +112,8 @@ meter::-webkit-meter-optimum-value {
 
 #graph1{
   padding: 3%;
+  margin: 10% 0% 10% 0%;
+  
 }
 
 #loan-metrics-barchart-div{

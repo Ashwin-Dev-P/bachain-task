@@ -1,12 +1,18 @@
 import React, { Component } from 'react'
 import Loading from './Loading'
 
+
+import MainMetricBarChart from './MainMetricBarChart'
+
+
 export default class MainMetrics extends Component {
 
     constructor(props) {
         super(props)
         this.state = {
             loading: true,
+
+
         }
     }
 
@@ -33,8 +39,10 @@ export default class MainMetrics extends Component {
 
         const data = mock_json;
         var total_value = 0;
+
         for (var i = 0; i < data.length; i++) {
             total_value = total_value + data[i].value;
+
         }
 
 
@@ -52,22 +60,32 @@ export default class MainMetrics extends Component {
         }
 
 
+
+
+
+
+
+
+
         this.setState({
             loading: false,
             total_value: total_value,
             data: final_data,
+
         })
+
     }
 
 
     render() {
-        console.log(this.state.data)
+
         return (
             <div id='main-metrics-div'>
                 <div className='row'>
                     <div className='col-xs-12 col-md-8'>
                         <h3 className='sub-heading'>Your company information</h3>
                         <span className='sub-text'>Main metrics</span>
+                        <hr />
                     </div>
                     <div className='col-xs-12 col-md-4'>
                         <div className='row'>
@@ -94,26 +112,9 @@ export default class MainMetrics extends Component {
                     </div>
                 </div>
 
+                <MainMetricBarChart data={this.state.data} />
 
 
-                <div className='row' id='graph1'>
-                    {this.state.loading === true ? <Loading /> :
-
-                        <>
-                            {this.state.data.map((datum) =>
-                            (
-                                <div key={datum.name}>
-
-                                    <meter className='meter' value={datum.percent} max="100"></meter>
-                                </div>
-                            )
-                            )}
-                        </>
-
-                    }
-
-
-                </div>
 
 
             </div>
