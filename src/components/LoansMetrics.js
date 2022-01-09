@@ -38,7 +38,25 @@ export default class LoansMetrics extends Component {
 
                     }
                 },
-                maintainAspectRatio: true,
+                maintainAspectRatio: false,
+                scales: {
+
+                    y: {
+
+                        min: 2,
+                        ticks: {
+                            stepSize: 2,
+                        },
+                        position: 'right',
+                        //display: false,
+                    },
+                    x: {
+                        grid: {
+                            display: false,
+                        }
+                    }
+                },
+                //base: 2,
             }
 
         }
@@ -48,14 +66,21 @@ export default class LoansMetrics extends Component {
 
     render() {
         return (
-            <div className='row myDiv shadow p-3 mb-5 bg-white rounded'>
-                Loan metrics
+            <div className='row myDiv shadow p-3 mb-5 mt-5 bg-white rounded'>
+                <div>
+                    <h3 className='sub-heading'>Loan metrics</h3>
 
+                    <span className='sub-text'>Loans owners</span>
+                    <hr style={{ "width": "2%" }} />
+                </div>
 
-                <Bar
-                    data={this.state.chartData}
-                    options={this.state.options}
-                />
+                <div id='loan-metrics-barchart-div'>
+                    <Bar
+                        data={this.state.chartData}
+                        options={this.state.options}
+                    />
+                </div>
+
             </div>
         )
     }
